@@ -1,12 +1,21 @@
-ï»¿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <style>
-        body em { color: red; }   /* body ì•ˆì˜ em ìš”ì†Œ */
-        body > h1 { color: blue; }   /* body ì•ˆì˜ h1 ìš”ì†Œ */
-    </style>
+<style>
+/*body em {
+	color: red;
+}  body ¾ÈÀÇ ¸ğµç ÈÄ¼Õ em ¿ä¼Ò */
+body>em {
+	color: red;
+} /* body ¾ÈÀÇ ¸ğµç Á÷°è ÈÄ¼Õ em ¿ä¼Ò */
+/*body>h1 {
+	color: blue;
+}  body ¾ÈÀÇ h1 ¿ä¼Ò */
+</style>
 </head>
 <body>
-    <h1>This headline is <em>very</em> important</h1>
+	<h1>
+		This headline is <em>very</em> important
+	</h1>
 </body>
 </html>
