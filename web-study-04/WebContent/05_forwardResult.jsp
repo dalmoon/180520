@@ -14,5 +14,13 @@ String name=(String)request.getAttribute("name");
 forward 방식으로 이동된 페이지 <br>
 나이 : <%=age %>
 이름 : <%=name %>
+아이디 : <%=request.getAttribute("id") %>
+입장시간 : <%=request.getAttribute("enterTime") %>
+
+<%	//05_includeResult.jsp 실행된 출력결과 포함
+	//pageContext.include("05_includeResult.jsp");
+%>
+<!-- 05_includeResult.jsp 소스코드 자체 포함 -->
+<%-- <%@ include file="05_includeResult.jsp" %> --%>
 </body>
 </html>
