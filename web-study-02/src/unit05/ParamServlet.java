@@ -33,7 +33,10 @@ public class ParamServlet extends HttpServlet {
 		response.setContentType("text/html;charset=EUC-KR");
 		String id = request.getParameter("id");
 		int age = Integer.parseInt(request.getParameter("age"));
+		String nm = request.getParameter("nm");
+		System.out.println(nm);
 		PrintWriter out = response.getWriter();
+		out.println(nm);
 		out.print("<html><body>");
 		out.println("당신이 입력한 정보입니다.<br>");
 		out.println("아 이 디 : ");

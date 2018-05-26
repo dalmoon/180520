@@ -1,19 +1,28 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%!String str = "안녕하세요!";
+	int a = 5, b = -5;
+
+	public int abs(int n) {
+		if (n < 0) {
+			n = -n;
+		}
+		return n;
+	}%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>서블릿</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<form method="get" action="MethodServlet">
-		<input type="submit" value="get 방식으로 호출하기">
-	</form>
-	<br>
-	<br>
-	<form method="post" action="MethodServlet2">
-		<input type="submit" value="post 방식으로 호출하기">
-	</form>
+	<%=str%><br>
+	<%=a%>
+	의 절대값 :
+	<%=abs(a)%><br>
+	<%=b%>
+	의 절대값 :
+	<%=abs(b)%><br>
 </body>
 </html>
