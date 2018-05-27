@@ -7,6 +7,7 @@
 <style type="text/css">
 #res {
 	background-color: red;
+	font-size: 2em;
 }
 </style>
 </head>
