@@ -22,6 +22,6 @@
 	request.setCharacterEncoding("utf-8");
 %>
 
-<jsp:forward page="empRegResult.jsp">
+<jsp:forward page="empRegResult2.jsp">
 	<jsp:param value="명이(가) 등록되었습니다." name="msg" />
 </jsp:forward>
