@@ -1,4 +1,7 @@
 <%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%
+System.out.println(session.getId());
+%>
 <!DOCTYPE html>
 <html>
 <head>
